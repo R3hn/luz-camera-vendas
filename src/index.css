@@ -1,0 +1,290 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 43 100% 61%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 43 100% 61%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 43 100% 61%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 10%;
+    --ring: 43 100% 61%;
+
+    /* Custom design tokens - solid colors only */
+    --blue-electric: 43 100% 61%;
+    --blue-glow: 43 100% 61%;
+    --yellow-electric: 43 100% 61%;
+    --yellow-glow: 43 100% 61%;
+    
+    /* Solid backgrounds - no gradients */
+    --gradient-primary: hsl(43 100% 61%);
+    --gradient-secondary: hsl(43 100% 61%);
+    --gradient-hero: hsl(0 0% 0%);
+    --gradient-sober: hsl(0 0% 5%);
+    --gradient-card: hsl(0 0% 5%);
+    --gradient-section: hsl(0 0% 0%);
+    
+    /* Refined shadows with yellow glow effects */
+    --shadow-blue-glow: 0 8px 32px -8px hsl(43 100% 61% / 0.3), 0 0 0 1px hsl(43 100% 61% / 0.1);
+    --shadow-yellow-glow: 0 8px 32px -8px hsl(43 100% 61% / 0.3), 0 0 0 1px hsl(43 100% 61% / 0.1);
+    --shadow-elegant: 0 20px 60px -10px hsl(0 0% 0% / 0.6), 0 8px 32px -8px hsl(0 0% 0% / 0.4);
+    --shadow-card: 0 4px 24px -4px hsl(0 0% 0% / 0.2), 0 0 0 1px hsl(0 0% 15%);
+    
+    /* Animation improvements */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: box-shadow 0.3s ease, transform 0.3s ease;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 26% 4%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 20% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 20% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 191 100% 50%;
+    --primary-foreground: 220 26% 4%;
+
+    --secondary: 43 100% 61%;
+    --secondary-foreground: 220 26% 4%;
+
+    --muted: 220 20% 12%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 43 100% 61%;
+    --accent-foreground: 220 26% 4%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 12%;
+    --ring: 191 100% 50%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background: var(--gradient-section);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .bg-gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+  
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-sober {
+    background: var(--gradient-sober);
+  }
+  
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .bg-gradient-section {
+    background: var(--gradient-section);
+  }
+  
+  .shadow-blue-glow {
+    box-shadow: var(--shadow-blue-glow);
+  }
+  
+  .shadow-yellow-glow {
+    box-shadow: var(--shadow-yellow-glow);
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-glow {
+    transition: var(--transition-glow);
+  }
+  
+  .text-gradient-primary {
+    color: hsl(43 100% 61%);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  }
+  
+  .text-gradient-secondary {
+    color: hsl(43 100% 61%);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  }
+
+  .glass-card {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .section-padding {
+    @apply py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 2xl:py-32;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-3 sm:px-4 md:px-6 lg:px-8;
+    max-width: 100%;
+  }
+
+  /* Prevent horizontal overflow on mobile */
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  /* Better text wrapping for mobile */
+  .break-words {
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* Ensure buttons don't overflow */
+  button {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  /* Responsive images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 640px) {
+  /* Disable hyphenation for all elements on mobile */
+  * {
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+    -ms-hyphens: none !important;
+  }
+  
+  .container-custom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Prevent text overflow */
+  h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+  }
+  
+  /* Better spacing for mobile cards */
+  .glass-card {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  /* Ensure full width buttons on mobile */
+  .w-full-mobile {
+    width: 100% !important;
+  }
+  
+  /* Fix all buttons to prevent overflow and text cutting */
+  button {
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    line-height: 1.4 !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+  
+  /* Specific fix for button text */
+  button span,
+  button > * {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+  
+  /* Enhanced text breaking for long content */
+  .break-words {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+}
