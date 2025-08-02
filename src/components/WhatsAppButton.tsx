@@ -1,5 +1,5 @@
 
-import whatsappIcon from "@/assets/whatsapp-icon.png";
+import { MessageCircle } from "lucide-react";
 
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
@@ -9,10 +9,10 @@ const WhatsAppButton = () => {
   return (
     <button
       onClick={handleWhatsAppClick}
-      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-12 h-12 sm:w-14 sm:h-14 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center"
       aria-label="Falar no WhatsApp"
     >
-      <img src={whatsappIcon} alt="WhatsApp" className="w-6 h-6 sm:w-7 sm:h-7" />
+      <MessageCircle className="w-7 h-7 sm:w-8 sm:h-8" />
     </button>
   );
 };
