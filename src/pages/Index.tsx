@@ -35,8 +35,8 @@ const Index = () => {
       <Sponsors />
       <FinalCTA />
       
-      <WhatsAppButton />
       <FloatingOffer />
+      <WhatsAppButton />
     </div>
   );
 };
