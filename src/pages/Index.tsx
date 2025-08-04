@@ -12,6 +12,7 @@ import FinalCTA from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import FloatingOffer from "@/components/FloatingOffer";
 import MiddleCTA from "@/components/MiddleCTA";
+import Guarantee from "@/components/Guarantee";
 
 
 const Index = () => {
@@ -28,6 +29,7 @@ const Index = () => {
       <MiddleCTA />
       
       <Pricing />
+      <Guarantee />
       
       <FAQ />
       <Sponsors />
