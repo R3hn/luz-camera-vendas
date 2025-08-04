@@ -8,7 +8,7 @@ const FloatingOffer = () => {
 
   return (
     <>
-      <div className="fixed bottom-24 right-4 z-50 hidden md:block">
+      <div className="fixed bottom-24 right-4 z-40 hidden md:block">
         <div className="glass-card rounded-2xl p-6 w-80 shadow-elegant border border-primary/20">
           <div className="flex items-center gap-2 mb-3">
             <span className="w-2 h-2 bg-primary rounded-full animate-ping"></span>
