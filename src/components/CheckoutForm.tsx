@@ -58,7 +58,7 @@ export const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
 
   const sendToMake = async (data: { name: string; email: string; phone: string }) => {
     try {
-      const response = await fetch('https://hook.us2.make.com/wgi2ocby4li5f4vp8fqekd8p59lx3snl', {
+      const response = await fetch('https://webhook.fiqon.app/webhook/9f8f93dc-2889-457d-a37e-f2923f2b3d8c/abff317d-6231-4e85-8a59-90ae31086134', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
