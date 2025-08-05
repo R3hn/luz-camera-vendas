@@ -123,7 +123,7 @@ export const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
       // Aguardar um pouco para mostrar o toast
       setTimeout(() => {
         // Redirecionar para o checkout
-        window.open('https://pay.kiwify.com.br/bEFfAOX', '_blank');
+        window.location.href = 'https://pay.kiwify.com.br/bEFfAOX';
         onClose();
         // Reset form
         setFormData({ name: "", email: "", phone: "" });
@@ -139,7 +139,7 @@ export const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
       
       // Mesmo com erro, redirecionar para o checkout
       setTimeout(() => {
-        window.open('https://pay.kiwify.com.br/bEFfAOX', '_blank');
+        window.location.href = 'https://pay.kiwify.com.br/bEFfAOX';
         onClose();
         setFormData({ name: "", email: "", phone: "" });
       }, 1500);
