@@ -63,7 +63,6 @@ export const CheckoutForm = ({ isOpen, onClose }: CheckoutFormProps) => {
         headers: {
           'Content-Type': 'application/json',
         },
-        mode: 'no-cors',
         body: JSON.stringify({
           nome: data.name,
           email: data.email,
