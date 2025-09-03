@@ -11,7 +11,7 @@ const Schedule = () => {
           </h2>
           <div className="inline-flex items-center gap-3 bg-gradient-primary px-6 py-3 rounded-xl text-primary-foreground font-bold text-xl shadow-blue-glow">
             <Clock className="w-6 h-6" />
-            <span>🕘 Início às 9h da manhã</span>
+            <span>Início às 9h da manhã</span>
           </div>
         </div>
 
@@ -64,7 +64,7 @@ const Schedule = () => {
           {/* Guarantee section */}
           <div className="mt-16 text-center bg-gradient-hero p-10 rounded-2xl shadow-elegant">
             <h3 className="text-xl md:text-2xl font-bold mb-6 text-white">
-              🕘 Das 9h às 18h - Um dia inteiro de transformação
+              Das 9h às 18h - Um dia inteiro de transformação
             </h3>
             <p className="text-white/90 text-lg">
               Incluindo coffee breaks estratégicos, almoço networking e tempo para prática em tempo real.

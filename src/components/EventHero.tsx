@@ -97,7 +97,7 @@ const EventHero = () => {
                 </div>
               </div>
               <div className="text-primary font-bold text-lg">
-                🕘 Início às 9h da manhã
+                Início às 9h da manhã
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@ const EventHero = () => {
             
             <div className="bg-primary/20 rounded-lg p-2 border border-primary/30">
               <div className="text-primary font-bold text-center">
-                🕘 Início às 9h da manhã
+                Início às 9h da manhã
               </div>
             </div>
           </div>

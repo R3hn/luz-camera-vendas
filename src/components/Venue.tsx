@@ -74,7 +74,7 @@ const Venue = () => {
                 </div>
                 <div>
                   <h3 className="text-lg sm:text-xl font-bold text-primary">Horário</h3>
-                  <p className="text-base sm:text-lg font-semibold text-primary">🕘 Início às 9h da manhã</p>
+                  <p className="text-base sm:text-lg font-semibold text-primary">Início às 9h da manhã</p>
                 </div>
               </div>
             </div>
