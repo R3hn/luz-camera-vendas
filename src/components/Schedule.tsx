@@ -6,9 +6,13 @@ const Schedule = () => {
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             <span className="text-gradient-secondary">Programação</span> do dia
           </h2>
+          <div className="inline-flex items-center gap-3 bg-gradient-primary px-6 py-3 rounded-xl text-primary-foreground font-bold text-xl shadow-blue-glow">
+            <Clock className="w-6 h-6" />
+            <span>🕘 Início às 9h da manhã</span>
+          </div>
         </div>
 
         <div className="max-w-5xl mx-auto">

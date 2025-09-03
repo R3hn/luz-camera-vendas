@@ -83,16 +83,21 @@ const EventHero = () => {
           </div>
 
           {/* Informações do evento - mobile antes do botão, desktop depois */}
-          <div className="md:hidden bg-black/60 backdrop-blur-sm rounded-lg p-3 border border-primary/20 max-w-sm mx-auto mb-4">
-            <div className="flex items-center gap-3 text-white justify-center text-sm font-medium">
-              <div className="flex items-center gap-1">
-                <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-                <span>Mar Hotel Recife</span>
+          <div className="md:hidden bg-black/60 backdrop-blur-sm rounded-lg p-4 border border-primary/20 max-w-sm mx-auto mb-4">
+            <div className="flex flex-col gap-2 text-white text-center">
+              <div className="flex items-center gap-3 justify-center text-sm font-medium">
+                <div className="flex items-center gap-1">
+                  <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
+                  <span>Mar Hotel Recife</span>
+                </div>
+                <span className="text-primary">|</span>
+                <div className="flex items-center gap-1">
+                  <Calendar className="w-4 h-4 text-primary flex-shrink-0" />
+                  <span>06/09</span>
+                </div>
               </div>
-              <span className="text-primary">|</span>
-              <div className="flex items-center gap-1">
-                <Calendar className="w-4 h-4 text-primary flex-shrink-0" />
-                <span>06/09</span>
+              <div className="text-primary font-bold text-lg">
+                🕘 Início às 9h da manhã
               </div>
             </div>
           </div>
@@ -118,6 +123,12 @@ const EventHero = () => {
             <div className="flex items-center gap-2 sm:gap-3 text-white justify-start">
               <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
               <span className="text-sm sm:text-base font-medium">06 de setembro (sábado)</span>
+            </div>
+            
+            <div className="bg-primary/20 rounded-lg p-2 border border-primary/30">
+              <div className="text-primary font-bold text-center">
+                🕘 Início às 9h da manhã
+              </div>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Star, Wifi, Car, Coffee, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { Calendar, MapPin, Star, Wifi, Car, Coffee, ArrowRight, ChevronLeft, ChevronRight, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { useCheckoutForm } from "@/hooks/useCheckoutForm";
@@ -42,7 +42,7 @@ const Venue = () => {
 
         <div className="max-w-6xl mx-auto">
           {/* Event Info Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-12 sm:mb-16 px-2 sm:px-0">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-12 sm:mb-16 px-2 sm:px-0">
             <div className="glass-card rounded-2xl p-6 sm:p-8 border border-primary/20 hover:shadow-blue-glow transition-glow">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center">
@@ -63,6 +63,18 @@ const Venue = () => {
                 <div>
                   <h3 className="text-lg sm:text-xl font-bold text-secondary">Local</h3>
                   <p className="text-base sm:text-lg font-semibold">Mar Hotel Conventions - Recife, PE</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="glass-card rounded-2xl p-6 sm:p-8 border border-primary/20 hover:shadow-blue-glow transition-glow bg-gradient-primary/10">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center">
+                  <Clock className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold text-primary">Horário</h3>
+                  <p className="text-base sm:text-lg font-semibold text-primary">🕘 Início às 9h da manhã</p>
                 </div>
               </div>
             </div>
